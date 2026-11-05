@@ -1,0 +1,5 @@
+# Source document: download it from the JRC (see README)
+*.pdf
+# Generated from the PDF; rebuild with chunk.py
+chunks.jsonl
+__pycache__/

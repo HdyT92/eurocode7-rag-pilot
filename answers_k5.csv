@@ -1,0 +1,19 @@
+﻿id,q_type,question,gold_answer,answer,sections_used,prompt_tokens,label
+Q01,3,"In the JRC 2013 worked example of a strip foundation with phi'k = 38 degrees, what foundation width B is required under DA1, DA2 and DA3?","DA1 = 1.50 m, DA2 = 1.21 m, DA3 = 1.74 m","[Section A.3.3 - DESIGN OF A STRIP FOUNDATION FOR BEARING RESISTANCE - pages 112, 113]
+
+For DA1, the foundation width B is 1,50 m [A.3.3 Table A.3.1].
+For DA2, the foundation width B is 1,21 m [A.3.3 Table A.3.2].
+For DA3, the foundation width B is 1,74 m [A.3.3 Table A.3.3].",A.3.3 ; A.3.4 ; A.8.2.4 ; A.3.2 ; A.8.2.3,3547,correct
+Q02,3,What partial factor is applied to tan phi' in material factor set M2?,1.25,[Table 3.3.3],3.2.2 ; 3.3 ; 7.3 ; A.8.2.3 ; A.8.1.3,2857,partial
+Q03,3,"Define the three methods for analysing limit states of shallow foundations in Eurocode 7 (direct, indirect, prescriptive) and explain how they differ.",Direct: separate ULS and SLS analyses; ULS models envisaged failure mechanism; SLS uses serviceability calculation | Indirect: comparable experience with field & lab results; choose SLS loads to satisfy all limit states | Prescriptive: conventional & conservative rules and control of construction; presumed bearing resistance,"The three methods for analyzing limit states of shallow foundations in Eurocode 7 are:
+
+- Direct: Carry out separate analyses for each limit state, both ultimate (ULS) and serviceability (SLS). (Section 3.2.1 [3.2.1])
+- Indirect: Use comparable experience with results of field & laboratory measurements & observations. Choose SLS loads to satisfy requirements of all limit states. (Section 3.2.1 [3.2.1])
+- Prescriptive: Use conventional & conservative design rules and specify control of construction. Use presumed bearing resistance. (Section 3.2.1 [3.2.1])
+
+These methods differ in their approach to analyzing limit states:
+- The Direct method involves separate analyses for ultimate and serviceability limit states.
+- The Indirect method relies on experience and observations to determine serviceability loads that satisfy all limit states.
+- The Prescriptive method uses established design rules and focuses on controlling construction.",3.2.1 ; 3.1 ; 3.5 ; 4.5 ; 8.7,1759,partial
+Q04,2,"What total settlement limit does Table 3.4.1 give for framed buildings (connection to services), and does the Annex A.3 strip foundation example satisfy its 5 cm allowable settlement?","(1) Table 3.4.1: 50-75 mm sands, 75-135 mm clays | (2) text: up to 50 mm often acceptable for isolated foundations | (3) A.3 allowable settlement = 5 cm | (4) with 10% stress limit: Ed = 3.3 + 2.1 = 5.4 cm | (5) document states Ed approx. equal to Cd, SLS considered satisfied | (6) without 10% limit: consolidation settlement = 24.3 cm","Table 3.4.1 gives a total settlement limit of 50-75mm for framed buildings (connection to services). The Annex A.3 strip foundation example has an allowable settlement of 5 cm (0.5 dm), which is within the acceptable range of 50-75mm as per Table 3.4.1, so it does satisfy the allowable settlement. [A.3.1, 3.4.1]",A.3.4 ; 3.4.1 ; A.3.1 ; A.3.5 ; 3.4,5495,wrong
+Q05,4,"According to the fatigue and soil dynamics clauses in this document, what is the maximum allowable rotation of a concrete raft foundation under dynamic loads from industrial machine vibration?","NOT IN DOCUMENT. The document has no fatigue or machine-foundation dynamic criteria. It only gives static limits (e.g. relative rotation 1/500, tilt 1/300) and mentions vibration only as a concern.",NOT IN DOCUMENT,3.4.1 ; 3.2.1 ; 3.3.1 ; 3.1 ; A.3.4,3786,abstain
